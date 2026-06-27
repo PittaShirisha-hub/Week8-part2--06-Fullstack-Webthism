@@ -8,12 +8,12 @@ A complete MERN Stack Service Booking Platform where customers can browse servic
 
 ### Frontend
 ```
-Add your Vercel URL here
+https://week8-part2-06-fullstack-webthism.vercel.app/
 ```
 
 ### Backend API
 ```
-Add your Render URL here
+https://week8-part2-06-fullstack-webthism.onrender.com/
 ```
 
 ---
