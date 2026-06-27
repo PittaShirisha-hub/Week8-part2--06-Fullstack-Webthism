@@ -65,7 +65,7 @@ function Payment() {
 
       // Create Booking
       const bookingRes = await axios.post(
-        "http://localhost:5000/api/bookings",
+        "https://week8-part2-06-fullstack-webthism.onrender.com/api/bookings",
         bookingData
       );
 
@@ -84,7 +84,7 @@ function Payment() {
 
       // Save Payment
       const paymentRes = await axios.post(
-        "http://localhost:5000/api/payments",
+        "https://week8-part2-06-fullstack-webthism.onrender.com/api/payments",
         {
           bookingId,
           userId: bookingData.userId,

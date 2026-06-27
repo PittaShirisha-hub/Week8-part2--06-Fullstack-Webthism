@@ -20,7 +20,7 @@ function Admin() {
 
   const fetchServices = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/services");
+      const res = await axios.get("https://week8-part2-06-fullstack-webthism.onrender.com/api/services");
       setServices(res.data);
     } catch (err) {
       console.log(err);
@@ -51,13 +51,13 @@ function Admin() {
 
       if (editingId) {
         await axios.put(
-          `http://localhost:5000/api/services/${editingId}`,
+          `https://week8-part2-06-fullstack-webthism.onrender.com/api/services/${editingId}`,
           formData
         );
         alert("Service Updated Successfully");
       } else {
         await axios.post(
-          "http://localhost:5000/api/services",
+          "https://week8-part2-06-fullstack-webthism.onrender.com/api/services",
           formData
         );
         alert("Service Added Successfully");
@@ -87,7 +87,7 @@ function Admin() {
     if (!window.confirm("Delete this service?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/services/${id}`);
+      await axios.delete(`https://week8-part2-06-fullstack-webthism.onrender.com/api/services/${id}`);
       fetchServices();
     } catch (err) {
       console.log(err);

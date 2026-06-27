@@ -14,7 +14,7 @@ function Register() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://week8-part2-06-fullstack-webthism.onrender.com/api/auth/register",
         form
       );
 

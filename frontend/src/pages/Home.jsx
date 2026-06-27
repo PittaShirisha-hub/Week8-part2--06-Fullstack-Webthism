@@ -7,7 +7,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/services")
+      .get("https://week8-part2-06-fullstack-webthism.onrender.com/api/services")
       .then((res) => setServices(res.data))
       .catch((err) => console.log(err));
   }, []);
